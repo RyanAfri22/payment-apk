@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #ff8102;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.small-logo {
+    width: 30px; 
+    height: auto;
+}
+
+
+.header-left i {
+    font-size: 24px;
+}
+
+.balance-card {
+    background-color: #f8ad43;
+    padding: 30px 15px;
+    border-radius: 10px;
+    color: white;
+    width: calc(100% - 30px);
+    margin: 25px auto 15px auto;
+    text-align: center;
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.balance-card .balance-text {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.balance-card .coin-reward {
+    font-size: 14px;
+    text-align: left;
+}
+
+.balance-card .top-buttons {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.balance-card .top-buttons button {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #ff7f00;
+}
+
+.search-bar {
+    padding: 20px;
+    margin-top: 160px;
+    /* Ditambahkan untuk memberikan jarak lebih besar */
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid orange;
+    border-radius: 5px;
+}
+
+.payment-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adjust the gap as needed */
+    padding: 20px 0; /* Optional: add padding for spacing around the buttons */
+}
+
+.payment-list .btn {
+    flex: 1;
+    max-width: 100px; /* Adjust max-width as needed */
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.btn-custom {
+    background-color: white; /* Set button background to white */
+    color: black; /* Set button text color */
+    border: 1px solid #ccc; /* Optional: add a border */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add shadow for better visual */
+}
+
+.btn-custom i {
+    margin-right: 5px; /* Add margin to icon for spacing */
+}
+
+.btn-custom:hover {
+    background-color: #f0f0f0; /* Change background on hover */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+footer button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    outline: none;
+    color: #555;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer button.active {
+    color: #ff7f00;
+}
+
+.scan-button {
+    background-color: #ff7f00;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    position: relative;
+    top: -30px;
+}
+
+.custom-link {
+    color: rgb(108, 105, 105); /* Set link color to black */
+    text-decoration: none; /* Remove underline */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.custom-link i, .custom-link h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.custom-link:hover {
+    color: #ff7f00; /* Maintain black color on hover */
+}

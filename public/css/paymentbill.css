@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.container {
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+header {
+    background-color: #ff7f00;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header i {
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+header h2 {
+    flex-grow: 1;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.payment-details {
+    padding: 16px;
+}
+
+.payment-details h2 {
+    margin-top: 0;
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
+}
+
+.detail, .total {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0; /* Increased padding for more spacing */
+    border-bottom: 1px solid #eaeaea;
+}
+
+.total {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 16px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#cancelButton {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+#confirmButton {
+    background-color: #ff7f00;
+    color: white;
+}
